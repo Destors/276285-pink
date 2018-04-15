@@ -5,8 +5,79 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Профессиональный HTML и CSS</a>», уровень 2.</p>
-
+    <header class="page-header">
+      <a href="#" class="page-header__logo">
+        <img src="http://placehold.it/150x100" alt="Логотип Пинк" class="page-header__logo-img">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a href="">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="">Фотографии</a>
+            </li>
+            <li class="site-list__item">
+              <a href="">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a href="">Html Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="page-main">
+      <h1 class="visually-hidden">Мобильное приложение "Pink"</h1>
+      <section class="main-poster">
+        <img src="http://placehold.it/150x100" alt="Пинк в действии" class="main-poster__img">
+        <h2 class="main-poster__download-btn">Скачать приложение</h2>
+        <ul class="main-poster__list download-menu">
+          <li>
+            <a href="#" class="download-menu__item" aria-label="Скачать для Apple">
+              <!--<svg></svg>-->
+            </a>
+          </li>
+          <li>
+            <a href="#" class="download-menu__item" aria-label="Скачать для Android">
+              <!--<svg></svg>-->
+            </a>
+          </li>
+          <li>
+            <a href="#" class="download-menu__item" aria-lable="Скачать для Windows-Phone">
+              <!--<svg></svg>-->
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="advantages">
+        <h2 class="visually-hidden">Наши преимущества</h2>
+        <b class="advantages__slogan">Устали от серости мегаполиса?</b><br>
+        <b class="advantages__slogan">Нам есть, что вам предложить!</b>
+        <div class="advantages__main-wrapper">
+          <ul class="advantages__list">
+            <li class="advantages__item">
+              <h3 class="advantages__title">Поднимает настроение</h3>
+              <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </li>
+            <li class="advantages__item">
+              <h3 class="advantages__title">Меняет мир вокруг</h3>
+              <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            </li>
+            <li class="advantages__item">
+              <h3 class="advantages__title">Заводит новых друзей</h3>
+              <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            </li>
+          </ul>
+          <img src="http://placehold.it/150x100" alt="Пинк в действии, со смайлом" class="advantages__img">
+        </div>
+      </section>
+      <section class="reviews">
+        <div class="reviews__wrapper slider">
+          <!--ul.reviews__list.slider__list>(li.reviews__item.slider__item>h3.reviews__title+p.reviews__description)*3-->
+      </section>
+    </main>
   </body>
 </html>
