@@ -28,14 +28,17 @@
           </ul>
         </div>
       </nav>
-      <img src="http://placehold.it/150x100" alt="Пинк в действии" class="main-poster__img">
+      <img class="page-header__background" src="http://placehold.it/150x100" alt="Пинк в действии">
+      <h1 class="page-header__title">Фотографии пользователей</h1>
     </header>
     <main class="page-main">
       <section class="main-gallery">
-        <h1 class="main-gallery__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h1>
+        <h2 class="main-gallery__title">
+        Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h1>
         <!--div.main-gallery__block.gallery>(article.gallery__item>img.gallery__img[src="http://placehold.it/150x100"]+blockquote.gallery__bloquote>cite.gallery__author-name+p.gallery__author-text^p.gallery__likes)*7-->
         <div class="main-gallery__block gallery">
           <article class="gallery__item">
+            <p class="gallery__best-photo">Понорама дня</p>
             <img src="http://placehold.it/150x100" alt="" class="gallery__img">
             <blockquote class="gallery__bloquote">
               <cite class="gallery__author-name">Анна <span class="gallery__author-date">(5 минут назад)</span></cite>
@@ -92,25 +95,28 @@
             <p class="gallery__likes">Нравится: 2560</p>
           </article>
         </div>
-        <p class="main-gallery__footer-title">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+        <p class="main-gallery__title">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
       </section>
       <section class="create-img">
-        <div class="create-img__block img-block">
-          <img src="http://placehold.it/150x100" alt="" class="gallery__img">
-          <div class="img-block__menu">
-            <button class="img-block__btn--cut"><!--svg--></button>
-            <button class="img-block__btn--color"><!--svg--></button>
-            <button class="img-block__btn--brightness"><!--svg--></button>
-            <button class="img-block__controller-switch"></button>
-          </div>
-          <div class="create-img__submit-block submit-block">
-            <button class="submit-block__btn--send">Запостить</button>
-            <button class="submit-block__btn--cancel">Отмена</button>
-          </div>
+        <div class="create-img__block">
+          <img src="http://placehold.it/150x100" alt="" class="create-img__main-img">
+          <form class="create-img__form img-form" action="https://echo.htmlacademy.ru" method="post">
+            <fieldset class="img-form__menu form-menu">
+              <legend class="visually-hidden">Выберете параметры обработки изображения</legend>
+              <input class="form-menu__input form-menu__input--cut" type="checkbox" name="form-menu--cut" id="form-menu--cut">
+              <input class="form-menu__input form-menu__input--color" type="checkbox" name="form-menu--color" id="form-menu--color">
+              <input class="form-menu__input form-menu__input--brightness" type="checkbox" name="form-menu--brightness" id="form-menu--brightness">
+              <input class="img-form__controller-switch" type="range" name="controller-switch" id="controller-switch">
+            </fieldset>
+            <div class="submit-block">
+              <input class="submit-block__btn submit-block__btn--send" type="submit" name="btn--send" id="btn--send" value="Запостить">
+              <input class="submit-block__btn submit-block__btn--cancel" type="reset" name="btn--cancel" id="btn--cancel" value="Отмена">
+            </div>
+          </form>
         </div>
       </section>
     </main>
-  <footer class="secondary-footer">
+    <footer class="secondary-footer">
       <a href="index.html" alt="Pink главная страница">
         <!--svg-logo-->
       </a>

@@ -28,9 +28,7 @@
           </ul>
         </div>
       </nav>
-      <img src="http://placehold.it/150x100" alt="Пинк в действии" class="main-poster__img">
-    </header>
-    <main class="page-main">
+      <img class="page-header__background" src="http://placehold.it/150x100" alt="Пинк в действии">
       <h1 class="visually-hidden">Мобильное приложение "Pink"</h1>
       <section class="main-poster">
         <h2 class="main-poster__download-btn">Скачать приложение</h2>
@@ -51,7 +49,10 @@
             </a>
           </li>
         </ul>
+        <p class="main-poster__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </section>
+    </header>
+    <main class="page-main">
       <section class="advantages">
         <h2 class="visually-hidden">Наши преимущества</h2>
         <b class="advantages__slogan">Устали от серости мегаполиса?<br>Нам есть, что вам предложить!</b>
@@ -76,21 +77,21 @@
       <section class="reviews">
         <h2 class="visually-hidden">Отзывы о нас</h2>
         <div class="reviews__wrapper slider">
-          <div class="reviews__list slider__list">
-            <blockquote class="reviews__item slider__item">
-              <cite class="reviews__author-name">Николай петров</cite>
+          <div class="slider__list">
+            <blockquote class="slider__item">
+              <cite class="reviews__author">Николай петров</cite>
               <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </blockquote>
-            <blockquote class="reviews__item slider__item">
-              <cite class="reviews__author-name">Lorem ipsum.</cite>
+            <blockquote class="slider__item">
+              <cite class="reviews__author">Lorem ipsum.</cite>
               <p class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, quos deleniti vero necessitatibus quibusdam! Eligendi pariatur aut facilis reprehenderit magni. Distinctio incidunt deleniti, quasi voluptatibus maiores et, tempore dolorem libero!</p>
             </blockquote>
-            <blockquote class="reviews__item slider__item">
-              <cite class="reviews__author-name">Lorem ipsum.</cite>
+            <blockquote class="slider__item">
+              <cite class="reviews__author">Lorem ipsum.</cite>
               <p class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, incidunt.</p>
             </blockquote>
           </div>
-          <p class="reviews__toggles slider__toggles">
+          <p class="slider__toggles">
             <button class="slider__toggle" type="button">1</button>
             <button class="slider__toggle" type="button">2</button>
             <button class="slider__toggle" type="button">3</button>
@@ -102,8 +103,8 @@
         <div class="buy-menu__wrapper slider">
           <!--ul.buy-menu__list.slider__list>(li.buy-menu_item.slider__item>.buy_menu__header>h3.buy-menu__title+b.buy-menu__price^p.buy-menu__feature.buy-menu__feature--yes*3)*3-->
           <ul class="buy-menu__list slider__list">
-            <li class="buy-menu_item slider__item">
-              <div class="buy_menu__header">
+            <li class="buy-menu__item slider__item">
+              <div class="buy-menu__header">
                 <h3 class="buy-menu__title">Эконом</h3>
                 <b class="buy-menu__price">2,99 usd</b>
               </div>
@@ -112,7 +113,7 @@
               <p class="buy-menu__feature buy-menu__feature--no">Комментарии</p>
             </li>
             <li class="buy-menu_item slider__item">
-              <div class="buy_menu__header">
+              <div class="buy-menu__header">
                 <h3 class="buy-menu__title">Стандарт</h3>
                 <b class="buy-menu__price">3,99 usd</b>
               </div>
@@ -121,7 +122,7 @@
               <p class="buy-menu__feature buy-menu__feature--no">Комментарии</p>
             </li>
             <li class="buy-menu_item slider__item">
-              <div class="buy_menu__header">
+              <div class="buy-menu__header">
                 <h3 class="buy-menu__title">Премиум</h3>
                 <b class="buy-menu__price">5,99 usd</b>
               </div>
@@ -139,20 +140,18 @@
       </section>
       <footer class="page-footer">
         <section class="page-footer__contacts contacts">
-          <h2 class="visually-hidden">Наши контакты</h2>
-          <h3 class="contacts__header">Остались вопросы?<br>Свяжитесь с нами!</h3>
-          <b class="contects__title">Звоните:</b>
-          <p class="contects_description">+7 (812) 555-66-66</p>
-          <b class="contects__title">Пишите:</b>
-          <p class="contects_description">mail@htmlacademy.ru</p>
-          <b class="contects__title">Приезжайте в гости:</b>
-          <p class="contects_description">ул. Большая<br>Конюшенная, 19/8</p>
+          <h2 class="contacts__header">Остались вопросы?<br>Свяжитесь с нами!</h2>
+          <b class="contacts__title">Звоните:</b>
+          <p class="contacts__description">+7 (812) 555-66-66</p>
+          <b class="contacts__title">Пишите:</b>
+          <p class="contacts_description">mail@htmlacademy.ru</p>
+          <b class="contacts__title">Приезжайте в гости:</b>
+          <p class="contacts__description">ул. Большая<br>Конюшенная, 19/8</p>
         </section>
         <section class="footer-map">
-          <img src="http://placehold.it/150x100" alt="ул. Большая<br>Конюшенная, 19/8" class="page-header__logo-img">
+          <img src="http://placehold.it/150x100" alt="ул. Большая<br>Конюшенная, 19/8" class="page-footer__logo-img">
         </section>
       </footer>
     </main>
   </body>
 </html>
-
