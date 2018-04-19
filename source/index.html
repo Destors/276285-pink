@@ -3,16 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
-      <a href="#" class="page-header__logo">
-        <img src="http://placehold.it/150x100" alt="Логотип Пинк" class="page-header__logo-img">
-      </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
+        <div class="main-nav__block">
+          <a href="#" class="page-header__logo">
+            <img src="http://placehold.it/150x100" alt="Логотип Пинк" class="page-header__logo-img">
+          </a>
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
+        </div>
+        <div class="main-nav__wrapper visually-hidden">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
               <a href="">Главная</a>
@@ -29,7 +32,7 @@
           </ul>
         </div>
       </nav>
-      <img class="page-header__background" src="http://placehold.it/150x100" alt="Пинк в действии">
+      <img class="page-header__background" src="img/iphone-hand-mobile@1x.png" width="258" height="286" alt="Пинк в действии">
       <h1 class="visually-hidden">Мобильное приложение "Pink"</h1>
       <section class="main-poster">
         <h2 class="main-poster__download-btn">Скачать приложение</h2>
@@ -112,7 +115,7 @@
               <p class="buy-menu__feature buy-menu__feature--no">Смайлики</p>
               <p class="buy-menu__feature buy-menu__feature--no">Комментарии</p>
             </li>
-            <li class="buy-menu_item slider__item">
+            <li class="buy-menu__item slider__item">
               <div class="buy-menu__header">
                 <h3 class="buy-menu__title">Стандарт</h3>
                 <b class="buy-menu__price">3,99 usd</b>
@@ -121,7 +124,7 @@
               <p class="buy-menu__feature buy-menu__feature--yes">Смайлики</p>
               <p class="buy-menu__feature buy-menu__feature--no">Комментарии</p>
             </li>
-            <li class="buy-menu_item slider__item">
+            <li class="buy-menu__item slider__item">
               <div class="buy-menu__header">
                 <h3 class="buy-menu__title">Премиум</h3>
                 <b class="buy-menu__price">5,99 usd</b>
