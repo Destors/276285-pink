@@ -3,37 +3,40 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
-      <a href="#" class="page-header__logo">
-        <img src="http://placehold.it/150x100" alt="Логотип Пинк" class="page-header__logo-img">
-      </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__block">
+          <a href="#" class="page-header__logo">
+          <img src="http://placehold.it/150x100" alt="Логотип Пинк" class="page-header__logo-img">
+          </a>
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
+        </div>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="index.html">Главная</a>
+            </li>
             <li class="site-list__item site-list__item--active">
-              <a href="">Главная</a>
+              <a class="site-list__link" href="photo.html">Фотографии</a>
             </li>
             <li class="site-list__item">
-              <a href="">Фотографии</a>
+              <a class="site-list__link" href="#">Конкурс</a>
             </li>
             <li class="site-list__item">
-              <a href="">Конкурс</a>
-            </li>
-            <li class="site-list__item">
-              <a href="">Html Academy</a>
+              <a class="site-list__link" href="#">Html Academy</a>
             </li>
           </ul>
         </div>
       </nav>
-      <img class="page-header__background" src="http://placehold.it/150x100" alt="Пинк в действии">
       <h1 class="page-header__title">Фотографии пользователей</h1>
     </header>
     <main class="page-main">
       <section class="main-gallery">
-        <h2 class="main-gallery__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h2>
+        <h2 class="page-main__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h2>
         <!--div.main-gallery__block.gallery>(article.gallery__item>img.gallery__img[src="http://placehold.it/150x100"]+blockquote.gallery__bloquote>cite.gallery__author-name+p.gallery__author-text^p.gallery__likes)*7-->
         <div class="main-gallery__block gallery">
           <article class="gallery__item">

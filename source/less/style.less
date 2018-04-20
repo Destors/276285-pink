@@ -1,3 +1,15 @@
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
 body {
   margin: 0;
   padding: 0px 20px;
@@ -24,12 +36,24 @@ body {
   overflow: hidden;
 }
 
+
 @import "variables.less";
+@import "mixins.less";
 @import "blocks/page-header.less";
+@import "blocks/page-main.less";
 @import "blocks/main-nav.less";
 @import "blocks/main-poster.less";
+@import "blocks/slider.less";
+@import "blocks/site-list.less";
 @import "blocks/advantages.less";
 @import "blocks/reviews.less";
 @import "blocks/buy-menu.less";
-@import "blocks/page-footer";
+@import "blocks/page-footer.less";
+@import "blocks/main-form.less";
+@import "blocks/form-list.less";
+@import "blocks/form-group.less";
+@import "blocks/gallery.less";
+@import "blocks/create-img.less";
+@import "blocks/submit-block.less";
+
 
