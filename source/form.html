@@ -3,37 +3,40 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
-      <a href="#" class="page-header__logo">
-        <img src="http://placehold.it/150x100" alt="Логотип Пинк" class="page-header__logo-img">
-      </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__block">
+          <a href="#" class="page-header__logo">
+          <img src="img/logo-pink-white-mobile.svg" alt="Логотип Пинк" class="page-header__logo-img">
+          </a>
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
+        </div>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="photo.html">Фотографии</a>
+            </li>
             <li class="site-list__item site-list__item--active">
-              <a href="">Главная</a>
+              <a class="site-list__link" href="#">Конкурс</a>
             </li>
             <li class="site-list__item">
-              <a href="">Фотографии</a>
-            </li>
-            <li class="site-list__item">
-              <a href="">Конкурс</a>
-            </li>
-            <li class="site-list__item">
-              <a href="">Html Academy</a>
+              <a class="site-list__link" href="#">Html Academy</a>
             </li>
           </ul>
         </div>
       </nav>
-      <img class="page-header__background" src="http://placehold.it/150x100" alt="Пинк в действии">
       <h1 class="page-header__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
     </header>
     <main class="page-main">
       <section class="main-form">
-        <h2 class="main-form__header">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</h2>
+        <h2 class="page-main__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</h2>
         <form class="main-form__form-menu" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="main-form__form-item">
             <legend class="visually-hidden">Личные данные</legend>
@@ -52,35 +55,37 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="main-form__form-item">
-            <legend class="main-form__title">Ваши безбашенные достижения в путешествии</legend>
-            <ul class="main-form__list form-list">
-              <li class="form-list__item form-group">
-                <label class="form-group__checkbox-label" for="shark_selphi">Сделал селфи с акулой</label>
-                <input class="form-group__checkbox-input" type="checkbox" id="shark_selphi" name="shark_selphi" checked>
-              </li>
-              <li class="form-list__item form-group">
-                <label class="form-group__checkbox-label" for="beach_burn">Обгорел на пляже</label>
-                <input class="form-group__checkbox-input" type="checkbox" id="beach_burn" name="beach_burn" checked>
-              </li>
-              <li class="form-list__item form-group">
-                <label class="form-group__checkbox-label" for="saw_norris">Видел Чака Норриса</label>
-                <input class="form-group__checkbox-input" type="checkbox" id="saw_norris" name="saw_norris">
-              </li>
-              <li class="form-list__item form-group">
-                <label class="form-group__checkbox-label" for="bought_souvenirs">Накупил сувениров</label>
-                <input class="form-group__checkbox-input" type="checkbox" id="bought_souvenirs" name="bought_souvenirs">
-              </li>
-              <li class="form-list__item form-group">
-                <label class="form-group__checkbox-label" for="keep_tower">Удержал башню</label>
-                <input class="form-group__checkbox-input" type="checkbox" id="keep_tower" name="keep_tower" checked>
-              </li>
-              <li class="form-list__item form-group">
-                <label class="form-group__checkbox-label" for="trash_in_hotel">Разгромил отель</label>
-                <input class="form-group__checkbox-input" type="checkbox" id="trash_in_hotel" name="trash_in_hotel">
-              </li>
-            </ul>
-          </fieldset>
+          <div class="form-extra-wrapper">
+            <fieldset class="main-form__form-item">
+              <legend class="main-form__title">Ваши безбашенные достижения в путешествии</legend>
+              <ul class="main-form__list form-list">
+                <li class="form-list__item form-group">
+                  <label class="form-group__checkbox-label" for="shark_selphi">Сделал селфи с акулой</label>
+                  <input class="form-group__checkbox-input" type="checkbox" id="shark_selphi" name="shark_selphi" checked>
+                </li>
+                <li class="form-list__item form-group">
+                  <label class="form-group__checkbox-label" for="beach_burn">Обгорел на пляже</label>
+                  <input class="form-group__checkbox-input" type="checkbox" id="beach_burn" name="beach_burn" checked>
+                </li>
+                <li class="form-list__item form-group">
+                  <label class="form-group__checkbox-label" for="saw_norris">Видел Чака Норриса</label>
+                  <input class="form-group__checkbox-input" type="checkbox" id="saw_norris" name="saw_norris">
+                </li>
+                <li class="form-list__item form-group">
+                  <label class="form-group__checkbox-label" for="bought_souvenirs">Накупил сувениров</label>
+                  <input class="form-group__checkbox-input" type="checkbox" id="bought_souvenirs" name="bought_souvenirs">
+                </li>
+                <li class="form-list__item form-group">
+                  <label class="form-group__checkbox-label" for="keep_tower">Удержал башню</label>
+                  <input class="form-group__checkbox-input" type="checkbox" id="keep_tower" name="keep_tower" checked>
+                </li>
+                <li class="form-list__item form-group">
+                  <label class="form-group__checkbox-label" for="trash_in_hotel">Разгромил отель</label>
+                  <input class="form-group__checkbox-input" type="checkbox" id="trash_in_hotel" name="trash_in_hotel">
+                </li>
+              </ul>
+            </fieldset>
+          </div>
           <fieldset class="main-form__form-item">
             <legend class="visually-hidden">Контактные данные</legend>
             <ul class="main-form__list form-list">
@@ -94,30 +99,32 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="main-form__form-item">
-            <legend class="main-form__title">С каким приложением путешествовали?</legend>
-            <ul class="main-form__list form-list">
-              <li class="form-list__item form-group">
-                <label class="form-group__radio-label" for="pink_ios">Pink для iOS</label>
-                <input class="form-group__radio-input" type="radio" id="pink_ios" name="platform_group" value="pink_ios" checked>
-              </li>
-              <li class="form-list__item form-group">
-                <label class="form-group__radio-label" for="pink_android">Pink на Android</label>
-                <input class="form-group__radio-input" type="radio" id="pink_android" name="platform_group" value="pink_android">
-              </li>
-              <li class="form-list__item form-group">
-                <label class="form-group__radio-label" for="pink_windows-phone">Windows Phone</label>
-                <input class="form-group__radio-input" type="radio" id="pink_windows-phone" name="platform_group" value="pink_windows-phone">
-              </li>
-            </ul>
-          </fieldset>
+          <div class="form-extra-wrapper">
+            <fieldset class="main-form__form-item">
+              <legend class="main-form__title">С каким приложением путешествовали?</legend>
+              <ul class="main-form__list form-list">
+                <li class="form-list__item form-group">
+                  <label class="form-group__radio-label" for="pink_ios">Pink для iOS</label>
+                  <input class="form-group__radio-input" type="radio" id="pink_ios" name="platform_group" value="pink_ios" checked>
+                </li>
+                <li class="form-list__item form-group">
+                  <label class="form-group__radio-label" for="pink_android">Pink на Android</label>
+                  <input class="form-group__radio-input" type="radio" id="pink_android" name="platform_group" value="pink_android">
+                </li>
+                <li class="form-list__item form-group">
+                  <label class="form-group__radio-label" for="pink_windows-phone">Windows Phone</label>
+                  <input class="form-group__radio-input" type="radio" id="pink_windows-phone" name="platform_group" value="pink_windows-phone">
+                </li>
+              </ul>
+            </fieldset>
+          </div>
           <fieldset class="main-form__form-item">
             <legend class="main-form__title">Опишите свои эмоции</legend>
-            <textarea class="main-form__textarea" name="emotions" id="emotions" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            <textarea class="main-form__textarea" name="emotions" id="emotions" cols="30" rows="7" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </fieldset>
-          <input type="submit" value="Отправить форму">
+          <input class="main-form__submit-btn" type="submit" value="Отправить форму">
         </form>
-        <b>* — обязательные поля</b>
+        <b class="main-form__footer-text"><span class="main-form__footer-text-decoration">*</span> — обязательные поля</b>
       </section>
     </main>
     <footer class="secondary-footer">

@@ -3,32 +3,36 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
-      <a href="#" class="page-header__logo">
-        <img src="http://placehold.it/150x100" alt="Логотип Пинк" class="page-header__logo-img">
-      </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__block">
+          <a href="#" class="page-header__logo">
+          <img src="img/logo-pink-white-mobile.svg" alt="Логотип Пинк" class="page-header__logo-img">
+          </a>
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
+        </div>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
-              <a href="">Главная</a>
+              <a class="site-list__link" href="#">Главная</a>
             </li>
             <li class="site-list__item">
-              <a href="">Фотографии</a>
+              <a class="site-list__link" href="photo.html">Фотографии</a>
             </li>
             <li class="site-list__item">
-              <a href="">Конкурс</a>
+              <a class="site-list__link" href="form.html">Конкурс</a>
             </li>
             <li class="site-list__item">
-              <a href="">Html Academy</a>
+              <a class="site-list__link" href="#">Html Academy</a>
             </li>
           </ul>
         </div>
       </nav>
-      <img class="page-header__background" src="http://placehold.it/150x100" alt="Пинк в действии">
+      <img class="page-header__background" src="img/iphone-hand-mobile@1x.png" width="258" height="286" alt="Пинк в действии">
       <h1 class="visually-hidden">Мобильное приложение "Pink"</h1>
       <section class="main-poster">
         <h2 class="main-poster__download-btn">Скачать приложение</h2>
@@ -71,7 +75,7 @@
               <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
             </li>
           </ul>
-          <img src="http://placehold.it/150x100" alt="Пинк в действии, со смайлом" class="advantages__img">
+          <img src="img/iphone-screen-mobile@1x.png" alt="Пинк в действии, со смайлом" class="advantages__img">
         </div>
       </section>
       <section class="reviews">
@@ -111,7 +115,7 @@
               <p class="buy-menu__feature buy-menu__feature--no">Смайлики</p>
               <p class="buy-menu__feature buy-menu__feature--no">Комментарии</p>
             </li>
-            <li class="buy-menu_item slider__item">
+            <li class="buy-menu__item slider__item">
               <div class="buy-menu__header">
                 <h3 class="buy-menu__title">Стандарт</h3>
                 <b class="buy-menu__price">3,99 usd</b>
@@ -120,7 +124,7 @@
               <p class="buy-menu__feature buy-menu__feature--yes">Смайлики</p>
               <p class="buy-menu__feature buy-menu__feature--no">Комментарии</p>
             </li>
-            <li class="buy-menu_item slider__item">
+            <li class="buy-menu__item slider__item">
               <div class="buy-menu__header">
                 <h3 class="buy-menu__title">Премиум</h3>
                 <b class="buy-menu__price">5,99 usd</b>
@@ -137,21 +141,21 @@
           </p>
         </div>
       </section>
-      <footer class="page-footer">
-        <section class="page-footer__contacts contacts">
-          <h2 class="contacts__header">Остались вопросы?<br>Свяжитесь с нами!</h2>
-          <b class="contacts__title">Звоните:</b>
-          <p class="contacts__description">+7 (812) 555-66-66</p>
-          <b class="contacts__title">Пишите:</b>
-          <p class="contacts_description">mail@htmlacademy.ru</p>
-          <b class="contacts__title">Приезжайте в гости:</b>
-          <p class="contacts__description">ул. Большая<br>Конюшенная, 19/8</p>
-        </section>
-        <section class="footer-map">
-          <h2 class="visually-hidden">Карта</h2>
-          <img src="http://placehold.it/150x100" alt="ул. Большая<br>Конюшенная, 19/8" class="page-footer__logo-img">
-        </section>
-      </footer>
     </main>
+    <footer class="page-footer">
+      <section class="page-footer__contacts contacts">
+        <h2 class="contacts__header">Остались вопросы?<br>Свяжитесь с нами!</h2>
+        <b class="contacts__title">Звоните:</b>
+        <p class="contacts__description">+7 (812) 555-66-66</p>
+        <b class="contacts__title">Пишите:</b>
+        <p class="contacts__description">mail@htmlacademy.ru</p>
+        <b class="contacts__title">Приезжайте в гости:</b>
+        <p class="contacts__description">ул. Большая<br>Конюшенная, 19/8</p>
+      </section>
+      <section class="footer-map">
+        <h2 class="visually-hidden">Карта</h2>
+        <img src="img/bg-map-mobile@1x.png" alt="ул. Большая<br>Конюшенная, 19/8" class="page-footer__logo-img">
+      </section>
+    </footer>
   </body>
 </html>
