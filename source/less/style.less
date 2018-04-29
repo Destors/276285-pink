@@ -1,56 +1,4 @@
 @import (less) "./node_modules/normalize.css/normalize.css";
-
-@font-face {
-  font-family: "Open Sans";
-  src: local("opensanslight"), local("opensans-light");
-  src: url("../fonts/opensanslight.woff2") format("woff2"), url("../fonts/opensanslight.woff") format("woff");
-  font-weight: 300;
-}
-
-@font-face {
-  font-family: "Open Sans";
-  src: local("opensans"), local("opensans-regular");
-  src: url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: "Open Sans";
-  src: local("opensansbold"), local("opensans-bold");
-  src: url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff");
-  font-weight: 400;
-}
-
-html {
-  box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  min-width: 320px;
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  color: #283645;
-  background-color: @body-bg-color;
-  min-height: 320px;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-
 @import "variables.less";
 @import "mixins.less";
 @import "scaffolding.less";
@@ -71,4 +19,6 @@ img {
 @import "blocks/gallery.less";
 @import "blocks/create-img.less";
 @import "blocks/submit-block.less";
+@import "blocks/container.less";
+
 
