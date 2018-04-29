@@ -31,14 +31,10 @@ html {
   box-sizing: inherit;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
-
 body {
   margin: 0;
-  padding: 0 20px;
+  padding: 0;
+  min-width: 320px;
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 14px;
   font-style: normal;
@@ -48,6 +44,12 @@ body {
   background-color: @body-bg-color;
   min-height: 320px;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 
 @import "variables.less";
 @import "mixins.less";
