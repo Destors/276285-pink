@@ -1,3 +1,7 @@
+.advantages {
+  margin-bottom: 42px;
+}
+
 .advantages__slogan {
   font-weight: 300;
   font-size: 24px;
@@ -10,10 +14,30 @@
 
 .advantages__main-wrapper {
     background-color: @body-bg-color-extra;
+    overflow: hidden;
 }
 
 .advantages__list.content-container {
-  padding-top: 64px;
+  padding-top: 50px;
+      margin-bottom: 27px;
+      overflow: hidden;
+      position: relative;
+}
+
+.advantages__list.content-container::after {
+  content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-size: cover;
+    background-image: url(../img/bg-triangle-white.svg);
+    background-repeat: no-repeat;
+}
+
+.advantages__item {
+  margin-top: 31px;
 }
 
 .advantages__list {
@@ -35,4 +59,12 @@
 
 .advantages__description {
   font-weight: 400;
+      margin-top: -6px;
+}
+
+.advantages-footer-wrapper {
+  display: flex;
+  align-content: center;
+  overflow: hidden;
+  margin-bottom: -42px;
 }
