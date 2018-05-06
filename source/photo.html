@@ -32,22 +32,29 @@
           </ul>
         </div>
       </nav>
-      <h1 class="page-header__title">Фотографии пользователей</h1>
+      <div class="page-header__background page-header__background--photo">
+        <h1 class="page-header__title">Фотографии пользователей</h1>
+      </div>
     </header>
     <main class="page-main">
       <section class="main-gallery">
-        <h2 class="page-main__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h2>
+        <div class="main-gallery__header-wrapper">
+          <h2 class="page-main__title">Взгляните на фотографии, которые выкладывают пользователи!<br>Видите, как не хватает ваших?</h2>
+        </div>
         <!--div.main-gallery__block.gallery>(article.gallery__item>img.gallery__img[src="http://placehold.it/150x100"]+blockquote.gallery__bloquote>cite.gallery__author-name+p.gallery__author-text^p.gallery__likes)*7-->
-        <div class="main-gallery__block gallery">
-          <article class="gallery__item">
-            <p class="gallery__best-photo">Понорама дня</p>
+
+          <article class="gallery__item gallery__item--best-photo">
+            <p class="gallery__best-photo">Панорама дня</p>
             <img src="img/panorama-mobile@1x.jpg" alt="" class="gallery__img">
-            <blockquote class="gallery__bloquote">
-              <cite class="gallery__author-name">Анна <span class="gallery__author-date">(5 минут назад)</span></cite>
-              <p class="gallery__author-text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-            </blockquote>
-            <p class="gallery__likes">Нравится: 215</p>
+            <div class="content-container">
+              <blockquote class="gallery__bloquote">
+                <cite class="gallery__author-name">Анна <span class="gallery__author-date">(5 минут назад)</span></cite>
+                <p class="gallery__author-text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+                <p class="gallery__likes">Нравится: 215</p>
+              </blockquote>
+            </div>
           </article>
+          <div class="main-gallery__block gallery content-container">
           <article class="gallery__item">
             <img src="img/photo-car-mobile@1x.jpg" alt="" class="gallery__img">
             <blockquote class="gallery__bloquote">

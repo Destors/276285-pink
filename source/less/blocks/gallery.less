@@ -2,14 +2,32 @@
   background-color: @body-bg-color-extra;
 }
 
+.gallery__img {
+  .reset-mp();
+}
+
+.gallery__item--best-photo {
+  position: relative;
+  background-color: inherit;
+}
+
 .gallery__best-photo {
+  margin: 0;
+  padding: 6px 17px;
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
   background-color: #d22856;
   color: #ffffff;
   width: 140px;
-  padding: 10px 17px;
+  position: absolute;
+  top: 0;
+  right: 20px;
+}
+
+.gallery__bloquote {
+  .reset-mp();
+  background-color: @body-bg-color-extra;
 }
 
 .gallery__author-name {
