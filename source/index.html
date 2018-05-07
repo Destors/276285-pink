@@ -1,168 +1,215 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>HTML Academy: Пинк</title>
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body class="container">
-    <header class="page-header">
-      <nav class="main-nav">
-        <div class="main-nav__logo-wrapper">
-          <a href="#" class="page-header__logo">
-          <img src="img/logo-pink-white-mobile.svg" alt="Логотип Пинк" class="page-header__logo-img">
-          </a>
-          <button class="main-nav__toggle visually-hidden" type="button">Открыть меню</button>
-        </div>
-        <div class="main-nav__list-wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a class="site-list__link" href="#">Главная</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="photo.html">Фотографии</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="form.html">Конкурс</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="#">Html Academy</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <div class="page-header__background page-header__background--index">
-        <img class="page-header__background-img" src="img/iphone-hand-mobile@1x.png" width="258" height="286" alt="Пинк в действии">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML Academy: Пинк</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="container">
+<header class="page-header">
+  <nav class="main-nav">
+    <div class="main-nav__logo-wrapper">
+      <a href="#" class="page-header__logo">
+        <img src="img/logo-pink-white-mobile.svg" alt="Логотип Пинк" class="page-header__logo-img">
+      </a>
+      <button class="main-nav__toggle visually-hidden" type="button">Открыть меню</button>
+    </div>
+    <div class="main-nav__list-wrapper">
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item site-list__item--active">
+          <a class="site-list__link" href="#">Главная</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="photo.html">Фотографии</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="form.html">Конкурс</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="#">Html Academy</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="page-header__background page-header__background--index">
+    <img class="page-header__background-img" src="img/iphone-hand-mobile@1x.png" width="258" height="286"
+         alt="Пинк в действии">
+  </div>
+  <h1 class="visually-hidden">Мобильное приложение "Pink"</h1>
+  <section class="main-poster content-container">
+    <h2 class="main-poster__download-btn">Скачать приложение</h2>
+    <ul class="main-poster__list download-menu">
+      <li>
+        <a href="#" class="download-menu__link" aria-label="Скачать для Apple">
+          <img src="img/logo-apple.svg" alt="Скачать для Apple">
+        </a>
+      </li>
+      <li>
+        <a href="#" class="download-menu__link" aria-label="Скачать для Android">
+          <img src="img/logo-android.svg" alt="Скачать для Android">
+        </a>
+      </li>
+      <li>
+        <a href="#" class="download-menu__link" aria-label="Скачать для Windows-Phone">
+          <img src="img/logo-microsoft.svg" alt="Скачать для Windows-Phone">
+        </a>
+      </li>
+    </ul>
+    <p class="main-poster__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+  </section>
+</header>
+<main class="page-main">
+  <section class="advantages">
+    <h2 class="visually-hidden">Наши преимущества</h2>
+    <div class="advantages__slogan-wrapper">
+      <p class="advantages__slogan">Устали от серости мегаполиса?</p>
+      <p class="advantages__slogan">Нам есть, что вам предложить!</p>
+    </div>
+    <div class="advantages__main-wrapper">
+      <ul class="advantages__list content-container">
+        <li class="advantages__item">
+          <h3 class="advantages__title">Поднимает настроение</h3>
+          <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
+            несколько кликов!</p>
+        </li>
+        <li class="advantages__item">
+          <h3 class="advantages__title">Меняет мир вокруг</h3>
+          <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
+            усилить эффект</p>
+        </li>
+        <li class="advantages__item">
+          <h3 class="advantages__title">Заводит новых друзей</h3>
+          <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите
+            новых</p>
+        </li>
+      </ul>
+      <div class="advantages-footer-wrapper">
+        <img src="img/iphone-screen-mobile@1x.png" alt="Пинк в действии, со смайлом" class="advantages__img">
       </div>
-      <h1 class="visually-hidden">Мобильное приложение "Pink"</h1>
-      <section class="main-poster content-container">
-        <h2 class="main-poster__download-btn">Скачать приложение</h2>
-        <ul class="main-poster__list download-menu">
-          <li>
-            <a href="#" class="download-menu__link" aria-label="Скачать для Apple">
-              <img src="img/logo-apple.svg" alt="Скачать для Apple">
-            </a>
-          </li>
-          <li>
-            <a href="#" class="download-menu__link" aria-label="Скачать для Android">
-              <img src="img/logo-android.svg" alt="Скачать для Android">
-            </a>
-          </li>
-          <li>
-            <a href="#" class="download-menu__link" aria-label="Скачать для Windows-Phone">
-              <img src="img/logo-microsoft.svg" alt="Скачать для Windows-Phone">
-            </a>
-          </li>
-        </ul>
-        <p class="main-poster__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-      </section>
-    </header>
-    <main class="page-main">
-      <section class="advantages">
-        <h2 class="visually-hidden">Наши преимущества</h2>
-        <div class="advantages__slogan-wrapper">
-          <p class="advantages__slogan">Устали от серости мегаполиса?</p>
-          <p class="advantages__slogan">Нам есть, что вам предложить!</p>
-        </div>
-        <div class="advantages__main-wrapper">
-          <ul class="advantages__list content-container">
-            <li class="advantages__item">
-              <h3 class="advantages__title">Поднимает настроение</h3>
-              <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-            </li>
-            <li class="advantages__item">
-              <h3 class="advantages__title">Меняет мир вокруг</h3>
-              <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-            </li>
-            <li class="advantages__item">
-              <h3 class="advantages__title">Заводит новых друзей</h3>
-              <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-            </li>
-          </ul>
-            <div class="advantages-footer-wrapper">
-               <img src="img/iphone-screen-mobile@1x.png" alt="Пинк в действии, со смайлом" class="advantages__img">
-            </div>
-        </div>
-      </section>
-      <section class="reviews">
-        <h2 class="visually-hidden">Отзывы о нас</h2>
-        <div class="reviews__wrapper slider content-container">
-          <div class="slider__list">
-            <blockquote class="slider__item">
-              <cite class="reviews__author">Николай Петров</cite>
-              <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-            </blockquote>
-            <blockquote class="slider__item visually-hidden">
-              <cite class="reviews__author">Lorem ipsum.</cite>
-              <p class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, quos deleniti vero necessitatibus quibusdam! Eligendi pariatur aut facilis reprehenderit magni. Distinctio incidunt deleniti, quasi voluptatibus maiores et, tempore dolorem libero!</p>
-            </blockquote>
-            <blockquote class="slider__item visually-hidden">
-              <cite class="reviews__author">Lorem ipsum.</cite>
-              <p class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, incidunt.</p>
-            </blockquote>
+    </div>
+  </section>
+  <section class="reviews">
+    <h2 class="visually-hidden">Отзывы о нас</h2>
+    <div class="reviews__wrapper slider content-container">
+      <div class="slider__list">
+        <blockquote class="slider__item">
+          <cite class="reviews__author">Николай Петров</cite>
+          <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
+            серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+        </blockquote>
+        <blockquote class="slider__item visually-hidden">
+          <cite class="reviews__author">Lorem ipsum.</cite>
+          <p class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, quos deleniti
+            vero necessitatibus quibusdam! Eligendi pariatur aut facilis reprehenderit magni. Distinctio incidunt
+            deleniti, quasi voluptatibus maiores et, tempore dolorem libero!</p>
+        </blockquote>
+        <blockquote class="slider__item visually-hidden">
+          <cite class="reviews__author">Lorem ipsum.</cite>
+          <p class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, incidunt.</p>
+        </blockquote>
+      </div>
+      <ul class="slide-controller">
+        <li class="slide-controller_button slide-controller_button--active"></li>
+        <li class="slide-controller_button"></li>
+        <li class="slide-controller_button"></li>
+      </ul>
+    </div>
+  </section>
+  <section class="buy-menu">
+    <h2 class="visually-hidden">Настроить необходимый вам пакет Pink</h2>
+    <div class="plan-slider">
+      <div class="plan-slider__content">
+        <div class="plan plan--descriptor">
+          <div class="plan__header plan__header--invisible">
           </div>
-          <p class="slider__toggles">
-            <button class="slider__toggle" type="button">1</button>
-            <button class="slider__toggle" type="button">2</button>
-            <button class="slider__toggle" type="button">3</button>
-          </p>
-        </div>
-      </section>
-      <section class="buy-menu">
-        <h2 class="visually-hidden">Настроить необходимый вам пакет Pink</h2>
-        <div class="buy-menu__wrapper slider">
-          <ul class="buy-menu__list slider__list">
-            <li class="buy-menu__item slider__item">
-              <div class="buy-menu__header">
-                <h3 class="buy-menu__title">Эконом</h3>
-                <b class="buy-menu__price">2,99 usd</b>
-              </div>
-              <p class="buy-menu__feature buy-menu__feature--yes">Розовый фильтр</p>
-              <p class="buy-menu__feature buy-menu__feature--no">Смайлики</p>
-              <p class="buy-menu__feature buy-menu__feature--no">Комментарии</p>
+          <ul class="plan__options">
+            <li class="plan__option">
+              Розовый фильтр
             </li>
-            <li class="buy-menu__item slider__item">
-              <div class="buy-menu__header">
-                <h3 class="buy-menu__title">Стандарт</h3>
-                <b class="buy-menu__price">3,99 usd</b>
-              </div>
-              <p class="buy-menu__feature buy-menu__feature--yes">Розовый фильтр</p>
-              <p class="buy-menu__feature buy-menu__feature--yes">Смайлики</p>
-              <p class="buy-menu__feature buy-menu__feature--no">Комментарии</p>
+            <li class="plan__option">
+              Смайлики
             </li>
-            <li class="buy-menu__item slider__item">
-              <div class="buy-menu__header">
-                <h3 class="buy-menu__title">Премиум</h3>
-                <b class="buy-menu__price">5,99 usd</b>
-              </div>
-              <p class="buy-menu__feature buy-menu__feature--yes">Розовый фильтр</p>
-              <p class="buy-menu__feature buy-menu__feature--yes">Смайлики</p>
-              <p class="buy-menu__feature buy-menu__feature--yes">Комментарии</p>
+            <li class="plan__option">
+              Комментарии
             </li>
           </ul>
-          <p class="buy-menu__toggles slider__toggles">
-            <button class="slider__toogle">1</button>
-            <button class="slider__toogle">2</button>
-            <button class="slider__toogle">3</button>
-          </p>
         </div>
-      </section>
-    </main>
-    <footer class="page-footer">
-      <section class="page-footer__contacts contacts">
-        <h2 class="contacts__header">Остались вопросы?<br>Свяжитесь с нами!</h2>
-        <b class="contacts__title">Звоните:</b>
-        <p class="contacts__description">+7 (812) 555-66-66</p>
-        <b class="contacts__title">Пишите:</b>
-        <p class="contacts__description">mail@htmlacademy.ru</p>
-        <b class="contacts__title">Приезжайте в гости:</b>
-        <p class="contacts__description">ул. Большая<br>Конюшенная, 19/8</p>
-      </section>
-      <section class="footer-map">
-        <h2 class="visually-hidden">Карта</h2>
-        <img src="img/bg-map-mobile@1x.png" alt="ул. Большая<br>Конюшенная, 19/8" class="page-footer__logo-img">
-      </section>
-    </footer>
-  </body>
+        <div class="plan">
+          <div class="plan__header">
+            <b class="plan__title">База</b>
+            <span>1,99 USD</span>
+          </div>
+          <ul class="plan__options">
+            <li class="plan__option plan__option--included">
+              Розовый фильтр
+            </li>
+            <li class="plan__option plan__option--not-included">
+              Смайлики
+            </li>
+            <li class="plan__option plan__option--not-included">
+              Комментарии
+            </li>
+          </ul>
+        </div>
+        <div class="plan">
+          <div class="plan__header">
+            <b class="plan__title">Стандарт</b>
+            <span>3,99 USD</span>
+            <span class="plan__label">Хит</span>
+          </div>
+          <ul class="plan__options">
+            <li class="plan__option plan__option--included">
+              Розовый фильтр
+            </li>
+            <li class="plan__option plan__option--included">
+              Смайлики
+            </li>
+            <li class="plan__option plan__option--not-included">
+              Комментарии
+            </li>
+          </ul>
+        </div>
+        <div class="plan">
+          <div class="plan__header">
+            <b class="plan__title">Анлим</b>
+            <span>9,99 USD</span>
+          </div>
+          <ul class="plan__options">
+            <li class="plan__option plan__option--included">
+              Розовый фильтр
+            </li>
+            <li class="plan__option plan__option--included">
+              Смайлики
+            </li>
+            <li class="plan__option plan__option--included">
+              Комментарии
+            </li>
+          </ul>
+        </div>
+      </div>
+      <ul class="slide-controller">
+        <li class="slide-controller_button"></li>
+        <li class="slide-controller_button slide-controller_button--active"></li>
+        <li class="slide-controller_button"></li>
+      </ul>
+    </div>
+  </section>
+</main>
+<footer class="page-footer">
+  <section class="page-footer__contacts contacts">
+    <h2 class="contacts__header">Остались вопросы?<br>Свяжитесь с нами!</h2>
+    <b class="contacts__title">Звоните:</b>
+    <p class="contacts__description">+7 (812) 555-66-66</p>
+    <b class="contacts__title">Пишите:</b>
+    <p class="contacts__description">mail@htmlacademy.ru</p>
+    <b class="contacts__title">Приезжайте в гости:</b>
+    <p class="contacts__description">ул. Большая<br>Конюшенная, 19/8</p>
+  </section>
+  <section class="footer-map">
+    <h2 class="visually-hidden">Карта</h2>
+    <img src="img/bg-map-mobile@1x.png" alt="ул. Большая<br>Конюшенная, 19/8" class="page-footer__logo-img">
+  </section>
+</footer>
+</body>
 </html>

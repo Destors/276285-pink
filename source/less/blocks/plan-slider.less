@@ -1,0 +1,22 @@
+.plan-slider {
+    padding-bottom: 68px;
+    overflow-x: hidden;
+
+    background-color: #f2f2f2;
+}
+
+.plan-slider__content {
+    position: relative;
+    left: -255px;
+
+    display: flex;
+}
+
+@media (min-width: @tablet-width) {
+    .plan-slider {
+        overflow-x: auto;
+    }
+    .plan-slider__content {
+        left: 0;
+    }
+}

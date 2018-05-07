@@ -1,0 +1,178 @@
+.plan {
+    position: relative;
+
+    overflow: hidden;
+
+    background-color: #fff;
+
+    flex: 0 0 277px;
+}
+
+.plan__options {
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+}
+
+.plan__option {
+    position: relative;
+
+    padding: 16px 20px 21px 21px;
+
+    text-transform: uppercase;
+
+    border-width: 0 0 2px 2px;
+    border-style: solid;
+    border-color: #e5e5e5;
+}
+
+.plan:last-child .plan__option {
+    border-right: 2px solid #e5e5e5;
+}
+
+.plan__option--included::after {
+    position: absolute;
+    top: 13px;
+    right: 16px;
+
+    width: 32px;
+    height: 35px;
+
+    content: " ";
+
+    background-image: url(../img/icon-yes.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.plan__option--not-included::after {
+    position: absolute;
+    top: 15px;
+    right: 17px;
+
+    width: 32px;
+    height: 27px;
+
+    content: " ";
+
+    background-image: url(../img/icon-no.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.plan__header {
+    position: relative;
+
+    padding: 21px 0;
+
+    font-size: 24px;
+
+    text-align: center;
+
+    color: #fff;
+    border-left: 2px solid #e5e5e5;
+    background-color: #283645;
+
+    &:first-child {
+        border-left-width: 2px;
+    }
+
+    &:last-child {
+        border-right-width: 2px;
+    }
+}
+
+.plan:last-child .plan__header {
+    border-right: 2px solid #e5e5e5;
+}
+
+.plan__label {
+    position: absolute;
+    top: 3px;
+    left: -38px;
+
+    padding: 1px 50px 7px 46px;
+
+    transform: rotate(-45deg);
+    text-transform: lowercase;
+
+    color: #fff;
+    background-color: #d22856;
+}
+
+.plan__title {
+    display: block;
+    margin-bottom: 7px;
+
+    font-size: 18px;
+
+    text-transform: uppercase;
+}
+
+.plan--descriptor {
+    display: none;
+}
+
+@media (min-width: @tablet-width) {
+    .plan-slider {
+        overflow-x: auto;
+    }
+    .plan-slider__content {
+        left: 0;
+    }
+    .plan {
+        flex-basis: 155px;
+    }
+    .plan--descriptor {
+        display: block;
+
+        flex-basis: 156px;
+
+        .plan__header {
+            height: 45px;
+
+            border-width: 0 0 2px 0;
+            border-style: solid;
+            border-color: #e5e5e5;
+            background: none;
+        }
+
+        .plan__option {
+            font-size: 14px;
+        }
+    }
+    .plan__header {
+        padding: 18px 0 14px;
+        overflow: hidden;
+
+        font-size: 18px;
+
+        border-left: 2px solid #e5e5e5;
+    }
+    .plan:nth-child(2) {
+        .plan__header {
+            border: none;
+        }
+    }
+    .plan__title {
+        font-size: 16px;
+    }
+    .plan__option {
+        height: 16px;
+        padding: 15px 16px 14px 16px;
+
+        font-size: 0;
+
+        text-transform: none;
+    }
+    .plan__option--included::after {
+        top: 5px;
+        right: 58px;
+    }
+    .plan__option--not-included::after {
+        top: 8px;
+        right: 60px;
+    }
+}

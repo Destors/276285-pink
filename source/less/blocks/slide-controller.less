@@ -1,0 +1,34 @@
+.slide-controller {
+    display: flex;
+    padding: 38px 0 47px;
+    margin: 0;
+
+    list-style: none;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.slide-controller_button {
+    width: 6px;
+    height: 6px;
+    margin-right: 13px;
+
+    border-radius: 50%;
+    background-color: #b5b9be;
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.slide-controller_button--active {
+    padding: 3px;
+
+    border: 3px solid black;
+    background-color: white;
+}
+
+
+@media (min-width: @tablet-width) {
+    display: none;
+}
