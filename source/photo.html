@@ -114,13 +114,14 @@
         <fieldset class="img-form__menu form-menu">
           <div class="form-menu__icon-wrapper">
             <legend class="visually-hidden">Выберете параметры обработки изображения</legend>
+            <input class="form-menu__input form-menu__input--cut" type="radio" name="img-menu" id="form-menu--cut" checked>
             <label class="form-menu__label form-menu__label--cut" for="form-menu--cut">
               <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
                     <path fill="none" d="M0,0h48v48H0V0z"/>
                     <path d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z"/>
                   </svg>
             </label>
-            <input class="form-menu__input form-menu__input--cut" type="radio" name="img-menu" id="form-menu--cut" checked>
+            <input class="form-menu__input form-menu__input--color" type="radio" name="img-menu" id="form-menu--color">
             <label class="form-menu__label form-menu__label--color" for="form-menu--color">
               <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
                     <path fill="none" d="M0,0h48v48H0V0z"/>
@@ -128,30 +129,33 @@
                     <rect y="40" width="48" height="3"/>
                   </svg>
             </label>
-            <input class="form-menu__input form-menu__input--color" type="radio" name="img-menu" id="form-menu--color">
+            <input class="form-menu__input form-menu__input--contrast" type="radio" name="img-menu" id="form-menu--contrast">
             <label class="form-menu__label form-menu__label--contrast" for="form-menu--contrast">
               <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.92px" height="31.92px" viewBox="-35.422 -7.96 31.92 31.92" enable-background="new -35.422 -7.96 31.92 31.92" xml:space="preserve">
-                    <path fill="#231F20" d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z"/>
+                    <path d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z"/>
                     <path d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519"/>
                   </svg>
             </label>
-            <input class="form-menu__input form-menu__input--contrast" type="radio" name="img-menu" id="form-menu--contrast">
           </div>
-          <input class="img-form__controller-switch" type="range" name="controller-switch" id="controller-switch">
+          <div class="form-menu__controller-wrapper">
+            <input class="img-form__controller-switch" type="range" name="controller-switch" id="controller-switch">
+          </div>
         </fieldset>
-        <div class="submit-block">
-          <input class="submit-block__btn submit-block__btn--send" type="submit" name="btn--send" id="btn--send" value="Запостить">
-          <input class="submit-block__btn submit-block__btn--cancel" type="reset" name="btn--cancel" id="btn--cancel" value="Отмена">
+        <div class="form-menu__submit-wrapper">
+          <input class="form-menu__btn form-menu__btn--send" type="submit" name="btn--send" id="btn--send" value="Запостить">
+          <input class="form-menu__btn form-menu__btn--cancel" type="reset" name="btn--cancel" id="btn--cancel" value="Отмена">
         </div>
       </form>
     </div>
   </section>
 </main>
 <footer class="secondary-footer">
-  <a href="index.html" title="Pink главная страница">
-    <!--svg-logo-->
-  </a>
-  <div class="secondary-footer__social-block">
+  <div class="secondary-footer__pink-wrapper">
+    <a class="secondary-footer__pink-logo" href="index.html" title="Pink главная страница">
+      <img src="img/logo-pink-blue-mobile.svg" alt="Логотип Pink">
+    </a>
+  </div>
+  <div class="secondary-footer__social-list-wrapper">
     <ul class="secondary-footer__social-list social-list">
       <li class="social-list__item">
         <a href="#" class="social-list__link" aria-label="Twitter" title="Мы в Twitter">svg</a>

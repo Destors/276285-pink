@@ -9,12 +9,13 @@
   <body class="container">
     <header class="page-header">
       <nav class="main-nav">
-        <div class="main-nav__logo-wrapper">
-          <a href="#" class="page-header__logo">
-          <img src="img/logo-pink-white-mobile.svg" alt="Логотип Пинк" class="page-header__logo-img">
-          </a>
-          <button class="main-nav__toggle visually-hidden" type="button">Открыть меню</button>
-        </div>
+        <div class="main-nav__logo-wrapper content-container">
+      <a href="#" class="page-header__logo">
+        <img src="img/logo-pink-white-mobile.svg" alt="Логотип Пинк" class="page-header__logo-img">
+      </a>
+      <button class="main-nav__toggle main-nav__toggle--open visually-hidden" type="button" aria-label="Открыть меню"></button>
+      <button class="main-nav__toggle main-nav__toggle--close" type="button" aria-label="Закрыть меню"></button>
+    </div>
         <div class="main-nav__list-wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
@@ -32,7 +33,9 @@
           </ul>
         </div>
       </nav>
-      <h1 class="page-header__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      <div class="page-header__background page-header__background--photo">
+    <h1 class="page-header__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+  </div>
     </header>
     <main class="page-main">
       <section class="main-form">
