@@ -60,7 +60,7 @@
               </li>
             </ul>
           </fieldset>
-          <div class="main-form__extra-wrapper">
+          <div class="main-form__extra-wrapper main-form__extra-wrapper--advanture">
             <fieldset class="main-form__form-item content-container">
               <legend class="main-form__title main-form__title--checkbox">Ваши безбашенные достижения в путешествии</legend>
               <ul class="main-form__list form-list">
@@ -91,7 +91,7 @@
               </ul>
             </fieldset>
           </div>
-          <fieldset class="main-form__form-item">
+          <fieldset class="main-form__form-item content-container">
             <legend class="visually-hidden">Контактные данные</legend>
             <ul class="main-form__list form-list">
               <li class="form-list__item form-group">
@@ -100,36 +100,40 @@
               </li>
               <li class="form-list__item form-group">
                 <label class="form-group__text-label" for="user_email">Адрес почты</label>
-                <input class="form-group__text-input" type="email" id="user_email" name="user_email" placeholder="Введите почту">
+                <input class="form-group__text-input" type="email" id="user_email" name="user_email" placeholder="Введите почту *">
               </li>
             </ul>
           </fieldset>
-          <div class="form-extra-wrapper">
+          <div class="main-form__extra-wrapper main-form__extra-wrapper--platform">
             <fieldset class="main-form__form-item">
-              <legend class="main-form__title">С каким приложением путешествовали?</legend>
+              <legend class="main-form__title main-form__title--radio">С каким приложением путешествовали?</legend>
               <ul class="main-form__list form-list">
-                <li class="form-list__item form-group">
-                  <label class="form-group__radio-label" for="pink_ios">Pink для iOS</label>
+                <li class="form-list__item form-list__item--radio form-group">
                   <input class="form-group__radio-input" type="radio" id="pink_ios" name="platform_group" value="pink_ios" checked>
+                  <label class="form-group__radio-label" for="pink_ios">Pink для iOS</label>
                 </li>
-                <li class="form-list__item form-group">
-                  <label class="form-group__radio-label" for="pink_android">Pink на Android</label>
+                <li class="form-list__item form-list__item--radio form-group">
                   <input class="form-group__radio-input" type="radio" id="pink_android" name="platform_group" value="pink_android">
+                  <label class="form-group__radio-label" for="pink_android">Pink на Android</label>
                 </li>
-                <li class="form-list__item form-group">
-                  <label class="form-group__radio-label" for="pink_windows-phone">Windows Phone</label>
+                <li class="form-list__item form-list__item--radio form-group">
                   <input class="form-group__radio-input" type="radio" id="pink_windows-phone" name="platform_group" value="pink_windows-phone">
+                  <label class="form-group__radio-label" for="pink_windows-phone">Windows Phone</label>
                 </li>
               </ul>
             </fieldset>
           </div>
-          <fieldset class="main-form__form-item">
+          <fieldset class="main-form__form-item content-container">
             <legend class="main-form__title">Опишите свои эмоции</legend>
-            <textarea class="main-form__textarea" name="emotions" id="emotions" cols="30" rows="7" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            <textarea class="main-form__textarea" name="emotions" id="emotions" cols="24" rows="6" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </fieldset>
-          <input class="main-form__submit-btn" type="submit" value="Отправить форму">
+          <div class="content-container">
+            <input class="main-form__submit-btn" type="submit" value="Отправить форму">
+          </div>
         </form>
-        <b class="main-form__footer-text"><span class="main-form__footer-text-decoration">*</span> — обязательные поля</b>
+        <div class="main-form__footer-text-wrapper content-container">
+          <b class="main-form__footer-text"><span class="main-form__footer-text-decoration">*</span> — обязательные поля</b>
+        </div>
       </section>
     </main>
     <footer class="secondary-footer">

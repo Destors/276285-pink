@@ -31,11 +31,20 @@
 }
 
 .main-form__extra-wrapper {
+    background-color: @body-bg-color-extra;
+}
+
+.main-form__extra-wrapper--advanture {
     padding-top: 39px;
     padding-bottom: 27px;
     margin-bottom: 33px;
+}
 
-    background-color: @body-bg-color-extra;
+.main-form__extra-wrapper--platform {
+    padding-top: 38px;
+    padding-bottom: 27px;
+    margin-top: 25px;
+    margin-bottom: 41px;
 }
 
 .main-form__form-item--extra {
@@ -45,14 +54,11 @@
     background-color: @body-bg-color-extra;
 }
 
-.main-form__textarea {
-    .form-group__checkbox-label;
-}
-
 .main-form__submit-btn {
     width: 280px;
-    padding: 15px 0;
+    padding: 21px 0;
 
+    font-size: 18px;
     font-weight: 700;
 
     text-transform: uppercase;
@@ -60,14 +66,43 @@
     color: #fff;
     border: none;
     background-color: #2aab6d;
+}
 
-    .form-group__checkbox-label;
+.main-form__footer-text-wrapper {
+    margin-top: 38px;
+    margin-bottom: 19px;
+
+    text-align: center;
 }
 
 .main-form__footer-text {
+    font-weight: 300;
+
     text-transform: uppercase;
 }
 
 .main-form__footer-text-decoration {
     color: #d22856;
+}
+
+.main-form__title--radio {
+    margin-bottom: 11px;
+}
+
+.main-form__textarea {
+    padding-top: 15px;
+    padding-right: 21px;
+    padding-bottom: 3px;
+    padding-left: 21px;
+    margin-top: 16px;
+    margin-bottom: 41px;
+
+    font-size: 18px;
+    line-height: 30px;
+
+    resize: none;
+
+    color: #283645;
+    border: 2px solid #e5e5e5;
+    border-radius: 2px;
 }
