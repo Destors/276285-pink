@@ -58,10 +58,19 @@
 }
 
 .gallery__author-date {
+    margin-left: 6px;
+
+    font-size: 12px;
     font-weight: 300;
+
+    text-transform: uppercase;
+
+    color: #283645;
 }
 
 .gallery__likes {
+    position: relative;
+
     padding: 0;
     margin-top: 9px;
     margin-left: 32px;
@@ -71,4 +80,18 @@
     text-transform: uppercase;
 
     color: #d22856;
+}
+
+.gallery__likes:before {
+    position: absolute;
+    top: 6px;
+    left: -32px;
+
+    width: 20px;
+    height: 20px;
+
+    content: "";
+
+    background-image: url(../img/icon-heart.svg);
+    background-repeat: no-repeat;
 }
